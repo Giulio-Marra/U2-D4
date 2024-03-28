@@ -1,0 +1,35 @@
+.mainContainer {
+    padding: 2%;
+    width: 100%;
+    background-color: gray;
+    text-align: center; 
+}
+
+.postit {
+    display: inline-block;
+    width: calc(20% - 0px); 
+    height: 200px;
+    margin: 10px;
+    box-shadow: 2px 1px 8px 1px rgba(0, 0, 0, 0.73);
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    transition: transform 1s, z-index 0.5s;
+    
+}
+.yellowPostit{
+    background-color: #f9fac8;
+    transform: rotate(351deg);   
+}
+.greenPostit{
+    background-color: #bfe8c0;
+    transform: rotate(6deg);
+}
+.purplePostit{
+    background-color: #b7b6d7;
+    transform: rotate(347deg);
+}
+.postit:hover {
+    transform: scale(1.2); 
+    z-index: 99;
+}
