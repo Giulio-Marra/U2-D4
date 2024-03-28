@@ -1,4 +1,7 @@
 .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2%;
     width: 100%;
     background-color: gray;
@@ -6,20 +9,23 @@
 }
 
 .postit {
-    display: inline-block;
-    width: calc(20% - 0px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(20% - 5px); 
     height: 200px;
     margin: 10px;
     box-shadow: 2px 1px 8px 1px rgba(0, 0, 0, 0.73);
     cursor: pointer;
     position: relative;
     z-index: 5;
-    transition: transform 1s, z-index 0.5s;
-    
+    transition: transform 1s, z-index 0.4s;   
 }
+
 .yellowPostit{
     background-color: #f9fac8;
-    transform: rotate(351deg);   
+    transform: rotate(351deg);
 }
 .greenPostit{
     background-color: #bfe8c0;
@@ -31,5 +37,5 @@
 }
 .postit:hover {
     transform: scale(1.2); 
-    z-index: 99;
+    z-index: 10;
 }
